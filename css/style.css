@@ -188,3 +188,51 @@ section {
 .resume li {
     margin-bottom: 0.5rem;
 }
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  img {
+    width: 80%;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+
+  img {
+    width: 60%;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
