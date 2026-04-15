@@ -10,3 +10,14 @@ document.addEventListener("DOMCOntentLoaded",()=>{
   });
 });
 
+let images = [
+  "media/blues.png",
+  "media/boxer.png",
+  "media/it.png",
+  "media/redbird.png",
+  "media/smoke.png",
+  "media/smug.png",
+  "media/suit.png",
+  "media/writer.png",
+  "media/yellowbird.png"
+];
