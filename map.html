@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Map</title>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="js/script.js" defer></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
+  <script>
+    function initMap() {
+      const location = { lat: 41.8349, lng: -87.6270 };
+
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: location,
+        mapTypeId: "roadmap"
+      });
+
+      const marker = new google.maps.Marker({
+        position: location,
+        map: map,
+        title: "Illinois Institute of Technology"
+      });
+
+      const infoWindow = new google.maps.InfoWindow({
+        content: "<h3>Illinois Institute of Technology</h3><p>Chicago, IL</p>"
+      });
+
+      marker.addListener("click", () => {
+        infoWindow.open(map, marker);
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <h1>My Map</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+    <a href="map.html">Map</a>
+  </nav>
+
+  <div id="map" style="width:100%; height:500px;"></div>
+
+</body>
+</html>
+
