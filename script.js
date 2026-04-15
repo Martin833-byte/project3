@@ -21,3 +21,19 @@ let images = [
   "media/writer.png",
   "media/yellowbird.png"
 ];
+
+  let index=0;
+  
+  function showSlide() {
+	  document.getElementById("slide").src = images[index];
+  }
+  
+  function nextSlide() {
+	  index = (index+1) % images.length;
+	  showSlide();
+  }
+  
+  function prevSlide(){
+	  index = (index - 1 +images.length)%images.length;
+	  showSlide();
+  }
