@@ -23,12 +23,12 @@ let images = [
 	  document.getElementById("slide").src = images[index];
   }
   
-  window.nextSlide {
+  window.nextSlide = function() {
 	  index = (index+1) % images.length;
 	  showSlide();
   }
   
-  window.prevSlide{
+  window.prevSlide = function(){
 	  index = (index - 1 +images.length)%images.length;
 	  showSlide();
   }
