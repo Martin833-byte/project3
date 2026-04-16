@@ -31,5 +31,9 @@ let images = [
   window.prevSlide = function(){
 	  index = (index - 1 +images.length)%images.length;
 	  showSlide();
-  }
+  };
+  
+  showSlide();
+}
+
 });
