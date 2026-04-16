@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded",()=>{
   console.log("JavaScript loaded successfully!");
   
-  const heading = document.getElementById("slide");
+  const slide = document.getElementById("slide");
   
 if(slide)
 {
@@ -23,12 +23,12 @@ let images = [
 	  document.getElementById("slide").src = images[index];
   }
   
-  window.nextSlide() {
+  window.nextSlide {
 	  index = (index+1) % images.length;
 	  showSlide();
   }
   
-  window.prevSlide(){
+  window.prevSlide{
 	  index = (index - 1 +images.length)%images.length;
 	  showSlide();
   }
