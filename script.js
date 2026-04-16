@@ -9,7 +9,8 @@ document.addEventListener("DOMContentLoaded",()=>{
 	  });
   });
 });
-
+if(slide)
+{
 let images = [
   "media/blues.png",
   "media/boxer.png",
@@ -37,3 +38,4 @@ let images = [
 	  index = (index - 1 +images.length)%images.length;
 	  showSlide();
   }
+});
