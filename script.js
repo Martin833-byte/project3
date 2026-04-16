@@ -1,4 +1,4 @@
-document.addEventListener("DOMCOntentLoaded",()=>{
+document.addEventListener("DOMContentLoaded",()=>{
   console.log("JavaScript loaded successfully!");
   
   const heading = document.querySelectorAll("h1");
