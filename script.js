@@ -1,14 +1,8 @@
 document.addEventListener("DOMContentLoaded",()=>{
   console.log("JavaScript loaded successfully!");
   
-  const heading = document.querySelectorAll("h1");
+  const heading = document.getElementById("slide");
   
-  heading.forEach(h=> {
-	  h.addEventListener("click",()=> {
-		  h.style.color= h.style.color === "blue"? "black" : "blue";
-	  });
-  });
-});
 if(slide)
 {
 let images = [
