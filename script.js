@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 let images = [
   "media/blues.png",
   "media/boxer.png",
-  "media/it.png",
+  "media/iit.png",
   "media/redbird.png",
   "media/smoke.png",
   "media/smug.png",
